@@ -76,7 +76,7 @@ def get_color_pool(n, bright=0.5, continuous=False):
     random.seed(666)
     np.random.seed(666)
     if bright > 1 or bright < 0:
-        raise Exception('pastel_factor should be in range [0, 1]')
+        raise Exception('bright should be in range [0, 1]')
     if continuous:
         return continuous_color_pool(n)
     if n < 13:
