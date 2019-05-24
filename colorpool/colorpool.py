@@ -4,6 +4,9 @@ import random
 
 
 class ColorPool(object):
+    """
+    This tool is designed to generate distinct color list for plotting
+    """
     def colorlover_pool(self, n, light=True):
         """refer https://plot.ly/ipython-notebooks/color-scales/"""
         if n <= 8:
@@ -58,6 +61,12 @@ class ColorPool(object):
         return best_color
 
     def get_color_pool(self, n, bright=0.5, continuous=False):
+        """
+        :param n: expected color number
+        :param bright: brightness of color
+        :param continuous: if to generate a continuous color list
+        :return: color list, in rgb mode
+        """
         random.seed(666)
         np.random.seed(666)
         if bright > 1 or bright < 0:
