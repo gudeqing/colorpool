@@ -19,6 +19,6 @@ setup(
             "Intended Audience :: Science/Research",
             "Topic :: Scientific/Engineering :: bio informatics"
         ],
-      install_requires=["colorlover", "colorsys"],
+      install_requires=["colorlover"],
       setup_requires=[],
 )
