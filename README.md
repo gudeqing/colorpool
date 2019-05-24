@@ -6,7 +6,7 @@ xcmds
 ```
 from colorpool import colorpool
 
-colors = colorpool.ColorPool().get_color_poor(15)
+colors = colorpool.get_color_pool(15)
 
 ```
 
