@@ -91,7 +91,7 @@ def get_color_pool(n, bright=0.5, continuous=False):
     elif n < 50:
         cutoff = 0.15
     elif n < 100:
-        cutoff = 0.9
+        cutoff = 0.1
     elif n < 200:
         cutoff = 0.02
     else:
